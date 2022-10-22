@@ -8,9 +8,8 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hola! Soy <span className="purple">Sebastián González </span>
-            de <span className="purple"> Montevideo, Uruguay.</span>
-            <br /> Soy un Licenciado en Diseño multimedia graduado en la <span className="purple">Universidad ORT Uruguay.</span>
+            Hola! Soy <span className="purple">Sebastián González</span>, tengo 25 años y en nací <span className="purple"> Montevideo, Uruguay.</span>
+            <br /> Soy Licenciado en Diseño multimedia graduado en la <span className="purple">Universidad ORT Uruguay.</span>
             <br />
             <br />
             Además de diseñar y programar tengo como hobbie
