@@ -3,6 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import mora from "../../Assets/Projects/mora.png";
+import myexp from "../../Assets/Projects/myexp.png";
 
 
 function Projects() {
@@ -22,9 +23,20 @@ function Projects() {
               imgPath={mora}
               isBlog={false}
               title="Mora Fit Uy"
-              description="Eccomerce desarrollado en React JS + Tailwind CSS, Backend en Firebase, integración de REST API con Mercadopago ambos a través de Node JS."
+              description="Eccomerce desarrollado en React JS + Tailwind CSS, Backend en Firebase, integración de REST API con Mercadopago ambos a través de Node JS. Status: En desarrollo. Año: 2022"
               ghLink="https://github.com/sededege/moratest"
               demoLink="https://moratest.vercel.app/"
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={myexp}
+              isBlog={false}
+              title="My Expenses"
+              description="Dashboard de egresos e ingresos. Desarrollado en React JS + Bootstrap + Material UI, Backend en MongoDB con Node JS + Postman. Status: Completado, Año: 2022"
+              ghLink="https://github.com/sededege/myexpenses"
+              demoLink="https://my-expenses-five.vercel.app/dash"
+              video= 'https://www.youtube.com/watch?v=k7My7laKgGA&feature=youtu.be'
             />
           </Col>
 
