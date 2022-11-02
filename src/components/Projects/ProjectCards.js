@@ -3,6 +3,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import { CgWebsite } from "react-icons/cg";
 import { BsCameraVideo, BsGithub } from "react-icons/bs";
+import { AiOutlineDownload } from "react-icons/ai";
 
 function ProjectCards(props) {
   return (
@@ -13,10 +14,11 @@ function ProjectCards(props) {
         <Card.Text style={{ textAlign: "justify" }}>
           {props.description}
         </Card.Text>
+        { props.isBlog || props.ghLink && (
         <Button variant="primary" href={props.ghLink} target="_blank">
           <BsGithub /> &nbsp;
           {props.isBlog ? "Blog" : "GitHub"}
-        </Button>
+        </Button> ) }
         
         {"\n"}
         {"\n"}
@@ -34,6 +36,7 @@ function ProjectCards(props) {
             {"Demo"}
           </Button>
         )}
+        
           {props.video && (
           <Button
             variant="primary"
@@ -44,6 +47,18 @@ function ProjectCards(props) {
             <BsCameraVideo /> &nbsp;
             {"Video"}
           </Button>
+        )}
+          {props.pdf && (
+          <Button
+          variant="primary"
+          href={props.pdf} 
+          target="_blank"
+     
+          style={{ marginLeft: "10px" }}
+        >
+          <AiOutlineDownload />
+          &nbsp;Metavero.pdf
+        </Button>
         )}
       </Card.Body>
     </Card>

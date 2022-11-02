@@ -4,7 +4,8 @@ import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import mora from "../../Assets/Projects/mora.png";
 import myexp from "../../Assets/Projects/myexp.png";
-
+import pdf from '../../Assets/metavero.pdf'
+import metavero from "../../Assets/Projects/metavero.jpg"
 
 function Projects() {
   return (
@@ -12,10 +13,10 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-        Mis Trabajos <strong className="purple">Recientes </strong>
+          Mis Trabajos <strong className="purple">Recientes </strong>
         </h1>
         <p style={{ color: "white" }}>
-        A continuación, encontrarán algunos de los proyectos realizados a lo largo de mi carrera.
+          A continuación, encontrarán algunos de los proyectos realizados a lo largo de mi carrera.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -30,15 +31,28 @@ function Projects() {
           </Col>
           <Col md={4} className="project-card">
             <ProjectCard
+              imgPath={metavero}
+              /* isBlog={true} */
+              title="Metavero"
+              description="Mi proyecto final de carrera como Lic. en diseño multimedia fue un visualizador de productos en Realidad Aumentada de Veromobili (empresa de muebles Brasilera con sede en Uruguay). Desarrollado en React JS + Material UI y el backend en Wordpress. El gran desafío de este proyecto fue generar un bridge entre Wordpress y React JS. La empresa contaba con su base de datos en Wordpress por eso se realizó de esta manera. Sé diseñó una submarca llamada Metavero bajo los valores que la empresa busca transmitir. Descargue el pdf para conocer mi mayor proyecto hasta ahora! Status: Completado, Año: 2021"
+              /* ghLink="https://github.com/sededege/myexpenses" */
+              /* demoLink="https://my-expenses-five.vercel.app/dash" */
+              video='https://www.youtube.com/watch?v=VKGTRedpx6M'
+              pdf={pdf}
+            />
+          </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
               imgPath={myexp}
               isBlog={false}
               title="My Expenses"
               description="Dashboard de egresos e ingresos. Desarrollado en React JS + Bootstrap + Material UI, Backend en MongoDB con Node JS + Postman. Status: Completado, Año: 2022"
               ghLink="https://github.com/sededege/myexpenses"
               demoLink="https://my-expenses-five.vercel.app/dash"
-              video= 'https://www.youtube.com/watch?v=k7My7laKgGA&feature=youtu.be'
+              video='https://www.youtube.com/watch?v=k7My7laKgGA&feature=youtu.be'
             />
           </Col>
+
 
           {/* <Col md={4} className="project-card">
             <ProjectCard
