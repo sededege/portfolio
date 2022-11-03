@@ -35,7 +35,7 @@ function Home2() {
               <i>
                 <b className="purple">
                   {" "}
-                  las modernas libreberias y frameworks de Javascript
+                  las modernas librerias y frameworks de Javascript
                 </b>
               </i>
               &nbsp; como
