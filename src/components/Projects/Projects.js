@@ -39,6 +39,7 @@ function Projects() {
               /* demoLink="https://my-expenses-five.vercel.app/dash" */
               video='https://www.youtube.com/watch?v=VKGTRedpx6M'
               pdf={pdf}
+              maqueta='https://xd.adobe.com/view/a643ca33-2dbf-4c93-b580-0a7ec695de75-f310/screen/d33988a1-73d3-4781-b385-836dade2c1cc?fullscreen'
             />
           </Col>
           <Col md={4} className="project-card">
