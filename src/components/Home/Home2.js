@@ -27,7 +27,7 @@ function Home2() {
               </i>
               <br />
               <br />
-              Estoy interesado formar parte de un equipo de trabajo disciplinado con la ambición de desarrollar grandes proyectos en la <b className="purple">Web 2</b>. &nbsp;
+              Actualmente estoy interesado formar parte de un equipo de trabajo disciplinado con la ambición de desarrollar grandes proyectos en la <b className="purple">Web 2</b>. &nbsp;
 
               <br />
               <br />
