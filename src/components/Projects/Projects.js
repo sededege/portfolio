@@ -13,7 +13,7 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-        My Recent <strong className="purple">Worls</strong>
+        My Recent <strong className="purple">Works</strong>
         </h1>
         <p style={{ color: "white" }}>
         Below you will find some of the projects carried out throughout my career.</p>
