@@ -71,7 +71,7 @@ function ProjectCards(props) {
           style={{ marginLeft: "10px", marginTop: '10px'}}
         >
           <FiEye/>
-          &nbsp; Maquetado
+          &nbsp; Wireframe
         </Button>
         )}
       </Card.Body>

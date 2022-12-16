@@ -8,25 +8,27 @@ function AboutCard() {
       <Card.Body>
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
-            Hola! Soy <span className="purple">Sebastián González</span>, tengo 25 años y en nací <span className="purple"> Montevideo, Uruguay.</span>
-            <br /> Soy Licenciado en Diseño multimedia graduado en la <span className="purple">Universidad ORT Uruguay.</span>
+            Hello! I'm <span className="purple">Sebastián González</span>,  am 25 years old and I was born in<span className="purple"> Montevideo, Uruguay.</span>
+            <br /> I have a degree in Multimedia Design graduated from
+ <span className="purple"> ORT Uruguay University.</span>
             <br />
             <br />
-            Además de diseñar y programar tengo como hobbie
-          </p>
+            In addition to designing and programming, I have as a hobby          </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Entrenar Crossfit 🏋🏻
+              <ImPointRight /> Training Crossfit 🏋🏻
+
             </li>
             <li className="about-activity">
-              <ImPointRight /> Jugar al fútbol 11 ⚽️
+              <ImPointRight /> Play soccer 11 ⚽️
+
             </li>
             <li className="about-activity">
-              <ImPointRight /> Jugar videojuegos 🎮
+              <ImPointRight />  Play video games 🎮
             </li>
-            <li className="about-activity">
+           {/*  <li className="about-activity">
               <ImPointRight /> Tradear NFT's en la red de Solana 🌄
-            </li>
+            </li> */}
           </ul>
 
           {/* <p style={{ color: "rgb(155 126 172)" }}>

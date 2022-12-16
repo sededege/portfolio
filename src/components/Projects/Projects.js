@@ -13,18 +13,17 @@ function Projects() {
       <Particle />
       <Container>
         <h1 className="project-heading">
-          Mis Trabajos <strong className="purple">Recientes </strong>
+        My Recent <strong className="purple">Worls</strong>
         </h1>
         <p style={{ color: "white" }}>
-          A continuación, encontrarán algunos de los proyectos realizados a lo largo de mi carrera.
-        </p>
+        Below you will find some of the projects carried out throughout my career.</p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
               imgPath={mora}
               isBlog={false}
               title="Mora Fit Uy"
-              description="Eccomerce desarrollado en React JS + Tailwind CSS, Backend en Firebase, integración de REST API con Mercadopago ambos a través de Node JS. Status: En desarrollo. Año: 2022"
+              description="Eccommerce developed in React JS + Tailwind CSS, Backend in Firebase, REST API integration with Mercadopago both through Node JS. Status: In development. Year: 2022"
               ghLink="https://github.com/sededege/moratest"
               demoLink="https://moratest.vercel.app/"
             />
@@ -34,7 +33,7 @@ function Projects() {
               imgPath={metavero}
               /* isBlog={true} */
               title="Metavero"
-              description="Mi proyecto final de carrera como Lic. en diseño multimedia fue un visualizador de productos en Realidad Aumentada de Veromobili (empresa de muebles Brasilera con sede en Uruguay). Desarrollado en React JS + Material UI y el backend en Wordpress. El gran desafío de este proyecto fue generar un bridge entre Wordpress y React JS. La empresa contaba con su base de datos en Wordpress por eso se realizó de esta manera. Sé diseñó una submarca llamada Metavero bajo los valores que la empresa busca transmitir. Descargue el pdf para conocer mi mayor proyecto hasta ahora! Status: Completado, Año: 2021"
+              description="My final project as a multimedia designer graduate was an Augmented Reality product display for Veromobili (Brazilian furniture company based in Uruguay). Developed in React JS + Material UI and the backend in Wordpress. The great challenge of this project was to create a bridge between Wordpress and React JS. The company had its database in Wordpress, which is why it was done this way. I designed a sub-brand called Metavero under the values ​​that the company seeks to transmit. Download the pdf to learn about my biggest project so far! Status: Completed, Year: 2021"
               /* ghLink="https://github.com/sededege/myexpenses" */
               /* demoLink="https://my-expenses-five.vercel.app/dash" */
               video='https://www.youtube.com/watch?v=VKGTRedpx6M'
@@ -47,7 +46,7 @@ function Projects() {
               imgPath={myexp}
               isBlog={false}
               title="My Expenses"
-              description="Dashboard de egresos e ingresos. Desarrollado en React JS + Bootstrap + Material UI, Backend en MongoDB con Node JS + Postman. Status: Completado, Año: 2022"
+              description="Dashboard of expenses and income. Developed in React JS + Bootstrap + Material UI, Backend in MongoDB with Node JS + Postman. Status: Completed, Year: 2022"
               ghLink="https://github.com/sededege/myexpenses"
               demoLink="https://my-expenses-five.vercel.app/dash"
               video='https://www.youtube.com/watch?v=k7My7laKgGA&feature=youtu.be'

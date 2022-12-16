@@ -16,32 +16,20 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              Te cuento <span className="purple"> algo ...</span>
+            LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              Como licenciado en diseño multimedia busco diferenciarme adaptándome a cada desafío de manera rápida y entusiasta gracias a mis conocimientos hibridos.
-              <br />
-              <br />A lo largo de mi carrera aprendí las bases en
+              As a multimedia design graduate, I seek to differentiate myself by adapting to each challenge quickly and enthusiastically thanks to my hybrid knowledge.              <br />
+              <br />Throughout my career I have learned the basics in 
               <i>
                 <b className="purple"> Javascript, HTML, CSS, MySQL y PHP. </b>
               </i>
               <br />
+             
               <br />
-              Actualmente estoy interesado formar parte de un equipo de trabajo disciplinado con la ambición de desarrollar grandes proyectos en la <b className="purple">Web 2</b>. &nbsp;
-
-              <br />
-              <br />
-              Disfruto apasionadamente el uso de tecnologias como <b className="purple">Node.js</b> y
-              <i>
-                <b className="purple">
-                  {" "}
-                  las modernas librerias y frameworks de Javascript
-                </b>
-              </i>
-              &nbsp; como
-              <i>
-                <b className="purple"> React.js</b>.
-              </i>
+              In the last 3 years I professionalized in <b className="purple">Frontend development</b>. In this process I have learned the basics of backend development because I needed them to develop my desired projects/apps. 
+              <br></br>
+              So, today I am a <b className="purple">Full stack developer</b> with hybrid knowledge in <b className="purple">React JS and Node JS</b>. Having worked with databases like Mongo db, Firebase.
             </p>
           </Col>
           <Col md={4} className="myAvtar">
@@ -52,9 +40,9 @@ function Home2() {
         </Row>
         <Row>
           <Col md={12} className="home-about-social">
-            <h1>Encuentrame en</h1>
+          <h1>FIND ME ON</h1>
             <p>
-              Sentite libre de <span className="purple">conectar </span>conmigo!
+              Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
               {/*  <li className="social-icons">
