@@ -52,10 +52,13 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto" defaultActiveKey="#home">
-            <Nav.Item>
+          <Nav className="ms-auto " defaultActiveKey="#home">
+            <Nav.Item >
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+                <div className="flex gap-2 items-center justify-center h-[50px]">
+                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
+
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -65,7 +68,9 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> About me
+                <div className="flex gap-2 items-center justify-center h-[50px]">
+                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About me
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -75,10 +80,13 @@ function NavBar() {
                 to="/project"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Projects
+                <div className="flex gap-2 items-center justify-center h-[50px]">
+
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginBottom: "2px" }}
+                  />{" "}
+                  Projects
+                </div>
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
@@ -87,10 +95,13 @@ function NavBar() {
                 to="/creative"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                Creative
+                <div className="flex gap-2 items-center justify-center h-[50px]">
+
+                  <AiOutlineFundProjectionScreen
+                    style={{ marginBottom: "2px" }}
+                  />{" "}
+                  Creative
+                </div>
               </Nav.Link>
             </Nav.Item>
 
@@ -100,13 +111,16 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+                <div className="flex gap-2 items-center justify-center h-[50px]">
+
+                  <CgFileDocument style={{ marginBottom: "2px" }} /> CV
+                </div>
               </Nav.Link>
             </Nav.Item>
 
-      
 
-           {/*  <Nav.Item className="fork-btn">
+
+            {/*  <Nav.Item className="fork-btn">
               <Button
                 href="https://github.com/soumyajit4419/Portfolio"
                 target="_blank"

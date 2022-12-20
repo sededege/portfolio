@@ -24,50 +24,50 @@ function Techstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
      
       <Col xs={4} md={2} className="tech-icons">
-        <DiJavascript1 />
+        <DiJavascript1 className="m-auto" />
         <p style={{fontSize: "20px" }}>Javascript</p>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiNodejs />
+        <DiNodejs className="m-auto" />
         <p style={{fontSize: "20px" }}>Node</p>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
+        <DiReact className="m-auto" />
         <p style={{fontSize: "20px" }}>React</p>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
+        <DiMongodb className="m-auto" />
         <p style={{fontSize: "20px" }}>Mongo db</p>
       </Col>
      {/*  <Col xs={4} md={2} className="tech-icons">
         <SiNextdotjs />
       </Col> */}
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+        <DiGit className="m-auto" />
         <p style={{fontSize: "20px" }}>Github</p>
 
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiFirebase className="m-auto" />
         <p style={{fontSize: "20px" }}>Firebase</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiHtml5 />
+        <SiHtml5 className="m-auto" />
         <p style={{fontSize: "20px" }}>HTML</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiCss3 />
+        <SiCss3 className="m-auto" />
         <p style={{fontSize: "20px" }}>CSS</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiMysql />
+        <DiMysql className="m-auto" />
         <p style={{fontSize: "20px" }}>MySQL</p>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPhp />
+        <DiPhp className="m-auto" />
         <p style={{fontSize: "20px" }}>PHP</p>
       </Col>
     {/*   <Col xs={4} md={2} className="tech-icons">
