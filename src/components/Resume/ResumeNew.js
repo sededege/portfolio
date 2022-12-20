@@ -11,7 +11,7 @@ pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/$
 const resumeLink =
   "https://sebag.tech/static/media/Cv_Sebastian_Gonzalez.042c92e99a47abe30438.pdf";
 
-  function ResumeNew() {
+function ResumeNew() {
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -29,8 +29,10 @@ const resumeLink =
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+            <div className="flex items-center justify-center gap-2">
+              <AiOutlineDownload />
+              Download CV
+            </div>
           </Button>
         </Row>
 
@@ -47,8 +49,10 @@ const resumeLink =
             target="_blank"
             style={{ maxWidth: "250px" }}
           >
-            <AiOutlineDownload />
-            &nbsp;Download CV
+         <div className="flex items-center justify-center gap-2">
+              <AiOutlineDownload />
+              Download CV
+            </div>
           </Button>
         </Row>
       </Container>

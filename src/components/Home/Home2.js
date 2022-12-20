@@ -44,7 +44,7 @@ function Home2() {
             <p>
               Feel free to <span className="purple">connect </span>with me
             </p>
-            <ul className="home-about-social-links">
+            <ul className='flex w-full m-0 p-0 justify-center gap-4'>
               {/*  <li className="social-icons">
                 <a
                   href="https://github.com/soumyajit4419"
@@ -65,24 +65,24 @@ function Home2() {
                   <AiOutlineTwitter />
                 </a>
               </li> */}
-              <li className="social-icons">
+              <li className="bg-white w-10 h-10 rounded-full items-center flex justify-center">
                 <a
                   href="https://www.linkedin.com/in/sebagtech/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour  home-social-icons"
+              
                 >
-                  <FaLinkedinIn />
+                  <FaLinkedinIn className="text-purple-500 " />
                 </a>
               </li>
-              <li className="social-icons">
+              <li className="bg-white w-10 h-10 rounded-full items-center flex justify-center">
                 <a
                   href="https://www.instagram.com/sebagonzalez_97/"
                   target="_blank"
                   rel="noreferrer"
-                  className="icon-colour home-social-icons"
+                 
                 >
-                  <AiFillInstagram />
+                  <AiFillInstagram className="text-purple-500 " />
                 </a>
               </li>
             </ul>
