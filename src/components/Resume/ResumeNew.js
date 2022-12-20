@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://sebag.tech/static/media/Cv_Sebastian_Gonzalez.8563bb7a5c7ade87b7e4.pdf";
+  "https://sebag.tech/static/media/Cv_Sebastian_Gonzalez.042c92e99a47abe30438.pdf";
 
   function ResumeNew() {
   const [width, setWidth] = useState(1200);
