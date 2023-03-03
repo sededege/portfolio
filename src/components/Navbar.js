@@ -4,7 +4,7 @@ import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate, useParams } from "react-router-dom";
 import { CgGitFork } from "react-icons/cg";
 import { ImBlog } from "react-icons/im";
 import {
@@ -13,14 +13,58 @@ import {
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
 } from "react-icons/ai";
-
 import { CgFileDocument } from "react-icons/cg";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const [menuu, setMenu] = useState("");
+  const param = useLocation();
+  console.log(param.pathname);
+  const navigate = useNavigate();
+  
+  React.useEffect(() => {
+    if (param.pathname === "/") {
+      setMenu("Home");
+    } 
+    if (param.pathname === "/about") {
+      setMenu("About me");
+    } 
+    if (param.pathname === "/project") {
+      setMenu("Projects");
+    } 
+    if (param.pathname === "/creative") {
+      setMenu("Creative");
+    } 
+    if (param.pathname === "/resume") {
+      setMenu("CV");
+    } 
+  }, []);
 
+  const menu = [
+    {
+      id: 0,
+      name: "Home",
+    },
+    {
+      id: 1,
+      name: "About me",
+    },
+    {
+      id: 2,
+      name: "Projects",
+    },
+    {
+      id: 3,
+      name: "Creative",
+    },
+    {
+      id: 4,
+      name: "CV",
+    },
+  ];
   function scrollHandler() {
+    console.log(window.scrollY )
     if (window.scrollY >= 20) {
       updateNavbar(true);
     } else {
@@ -28,8 +72,37 @@ function NavBar() {
     }
   }
 
+  console.log(menuu)
   window.addEventListener("scroll", scrollHandler);
 
+  const where = (a) => {
+    console.log(a);
+    if (a === "Home") {
+      navigate("/");
+      setMenu("Home");
+
+    }
+    else if (a === "About me") {
+      navigate("/about");
+      setMenu("About me");
+
+    }
+    else if (a === "Projects") {
+      navigate("/project");
+      setMenu("Projects");
+
+    }
+    else if (a === "Creative") {
+      navigate("/creative");
+      setMenu("Creative");
+
+    }
+    else if (a === "CV") {
+      navigate("/resume");
+      setMenu("CV");
+
+    }
+  };
   return (
     <Navbar
       expanded={expand}
@@ -38,7 +111,7 @@ function NavBar() {
       className={navColour ? "sticky" : "navbar"}
     >
       <Container>
-        <Navbar.Brand href="/" className="d-flex">
+        <Navbar.Brand href="/" className="d-flex  h-[20] items-center">
           <img src={logo} className="img-fluid logo" alt="brand" />
         </Navbar.Brand>
         <Navbar.Toggle
@@ -52,73 +125,19 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto " defaultActiveKey="#home">
-            <Nav.Item >
-              <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <div className="flex gap-2 items-center justify-center h-[50px]">
-                  <AiOutlineHome style={{ marginBottom: "2px" }} /> Home
-
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <div className="flex gap-2 items-center justify-center h-[50px]">
-                  <AiOutlineUser style={{ marginBottom: "2px" }} /> About me
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <div className="flex gap-2 items-center justify-center h-[50px]">
-
-                  <AiOutlineFundProjectionScreen
-                    style={{ marginBottom: "2px" }}
-                  />{" "}
-                  Projects
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/creative"
-                onClick={() => updateExpanded(false)}
-              >
-                <div className="flex gap-2 items-center justify-center h-[50px]">
-
-                  <AiOutlineFundProjectionScreen
-                    style={{ marginBottom: "2px" }}
-                  />{" "}
-                  Creative
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <div className="flex gap-2 items-center justify-center h-[50px]">
-
-                  <CgFileDocument style={{ marginBottom: "2px" }} /> CV
-                </div>
-              </Nav.Link>
-            </Nav.Item>
-
-
+          <Nav className="ms-auto text-black" defaultActiveKey="#home">
+            {menu.map((a) => (
+              <Nav.Item>
+                <Nav.Link
+                  onClick={() => where(a.name)}
+                  className="cursor-pointer"
+                >
+                  <p className={`${menuu === a.name ? 'text-blue-500 font-bold' : 'text-gray-400' } h-[10px] items-center hover:text-blue-500 hover:font-bold  `}>
+                    {a.name}
+                  </p>
+                </Nav.Link>
+              </Nav.Item>
+            ))}
 
             {/*  <Nav.Item className="fork-btn">
               <Button

@@ -1,17 +1,5 @@
 html {
-  --section-background-color: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
-  );
 
-  --image-gradient: linear-gradient(
-    to bottom left,
-    rgba(17, 16, 16, 0.678),
-    rgba(12, 10, 22, 0.863)
-  );
-
-  --imp-text-color: rgb(7, 164, 255) !important;
 
 }
 
@@ -19,9 +7,9 @@ html {
   color: var(--imp-text-color) !important;
 }
 
-button:focus {
+/* button:focus {
   box-shadow: none !important;
-}
+} */
 
 /* --------- */
 /*  Preloader */
@@ -33,7 +21,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: white;
   background-size: 10%;
   background-image: url(./Assets/logo.png);
   background-repeat: no-repeat;
@@ -59,26 +47,27 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: white;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgb(7, 164, 255);
-  border-radius: 12px;
+ 
+
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(7, 164, 255);
-  border-radius: 12px;
+  background: eh;
+  border-radius: 4px;
 }
 
 /* --------- */
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: white;
+  padding: 3px;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -87,8 +76,8 @@ button:focus {
 .navbar {
   position: fixed !important;
   transition: all 0.3s ease-out 0s !important;
-  padding: 0.3rem 2rem !important;
-  font-size: 1.2rem !important;
+/*   padding: 0.1rem 2em !important;
+ */  font-size: 1.2rem !important;
 }
 
 .navbar-toggler {
@@ -144,9 +133,9 @@ button:focus {
 
 @media (max-width: 767px) {
   .navbar {
-    padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    padding: 0.5rem 2rem !important;
+    font-size: 1.2rem !important;
+    background-color: white !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
@@ -162,13 +151,12 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
-  padding-right: 1rem !important;
-  padding-left: 1rem !important;
+  color: black !important;
 }
 
 .nav-link {
-  padding: 0.8rem 1rem !important;
+  padding: 0.2rem 0.1rem !important;
+  font-size: 18px !important;
 }
 
 @media (max-width: 767px) {
@@ -196,7 +184,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: #4a8bf7;
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -256,7 +244,7 @@ button:focus {
   padding-top: 80px !important;
 }
 
-.home-section {
+/* .home-section {
   position: relative;
   z-index: -1;
   background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
@@ -264,7 +252,7 @@ button:focus {
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
   padding-top: 30px !important;
-}
+} */
 
 .home-content {
   padding: 9rem 0 2rem !important;
@@ -282,9 +270,7 @@ button:focus {
   padding-left: 45px !important;
 }
 
-.main-name {
-  color: #fff;
-}
+
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
@@ -404,11 +390,12 @@ button:focus {
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: white;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
-}
+/*   color: black !important;
+ */}
 .footer-copywright {
   text-align: center !important;
 }
@@ -527,14 +514,14 @@ button:focus {
 
 .btn-primary {
   color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  background-color: #4a8bf7!important;
+  border-color: #4a8bf7 !important;
 }
 
 .btn-primary:hover {
   color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  background-color: #4a8bf7 !important;
+  border-color: #4a8bf7!important;
 }
 .btn:focus {
   outline: none !important;
@@ -555,7 +542,6 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
   color: white !important;
 }
 
@@ -564,7 +550,6 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -572,6 +557,7 @@ button:focus {
   box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
+  box-sizing: border-box !important;
 }
 
 @media (max-width: 767px) {
@@ -583,12 +569,13 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
-}
+/*   border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+ */}
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
 }
+
 
 .quote-card-view {
   border: none !important;

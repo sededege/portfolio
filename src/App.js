@@ -3,7 +3,7 @@ import Preloader from "../src/components/Pre";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home/Home";
 import About from "./components/About/About";
-import Projects from "./components/Projects/Projects";
+import Projects from "./components/Projects/Projects2";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
 import {
@@ -17,6 +17,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Creative from "./components/Creative/Creative";
+import Projectspopup from "./components/Projects/Projectspopup";
 
 function App() {
   const [load, upadateLoad] = useState(true);
@@ -41,6 +42,7 @@ function App() {
           <Route path="/creative" element={<Creative/>} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
+          <Route path="/project/:projectId" element={<Projectspopup />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />

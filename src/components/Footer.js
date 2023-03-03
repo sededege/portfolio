@@ -11,51 +11,45 @@ function Footer() {
   let date = new Date();
   let year = date.getFullYear();
   return (
-    <Container fluid className="footer">
-      <Row>
-        <Col md="4" className="footer-copywright">
-          <h3>Designed by Sebastián González</h3>
-        </Col> 
-        <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} SG</h3>
-        </Col>
-        <Col md="4" className="footer-body">
-          <ul className="footer-icons">
-             <li className="social-icons">
-              <a
-                href="https://github.com/sededege"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillGithub />
-              </a>
-            </li>
-        
-            <li className="social-icons">
-              <a
-                href="https://www.linkedin.com/in/sebagtech/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <FaLinkedinIn />
-              </a>
-            </li>
-            <li className="social-icons">
-              <a
-                href="https://www.instagram.com/sebagonzalez_97/"
-                style={{ color: "white" }}
-                target="_blank" 
-                rel="noopener noreferrer"
-              >
-                <AiFillInstagram />
-              </a>
-            </li>
-          </ul>
-        </Col>
-      </Row>
-    </Container>
+    <div className="text-[1rem] hidden md:flex justify-between px-[4em] items-center h-20">
+      <h3 className="text-black text-[0.9rem]" >Designed by Sebastián González</h3>
+
+      <h3 className="text-black  text-[0.9rem]">Copyright © {year} SG</h3>
+
+      <ul className="gap-4 items-center flex">
+        <li className=" shadow-md p-2 rounded-full ">
+          <a
+            href="https://github.com/sededege"
+            className="text-blue-500  "
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillGithub />
+          </a>
+        </li>
+
+        <li className=" shadow-md p-2 rounded-full ">
+          <a
+            className=" text-blue-500  "
+            href="https://www.linkedin.com/in/sebagtech/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <FaLinkedinIn />
+          </a>
+        </li>
+        <li className=" shadow-md p-2 rounded-full">
+          <a
+            className="text-blue-500  "
+            href="https://www.instagram.com/sebagonzalez_97/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <AiFillInstagram />
+          </a>
+        </li>
+      </ul>
+    </div>
   );
 }
 

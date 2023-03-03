@@ -8,21 +8,21 @@ import Type from "./Type";
 function Home() {
   return (
     <section>
-      <Container fluid className="home-section" id="home">
-        <Particle />
-        <Container className="home-content">
+      <Container fluid className="home-section " id="home">
+{/*         <Particle />
+ */}        <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
-              <h1 style={{ paddingBottom: 15 }} className="heading">
+              <h1 style={{ paddingBottom: 15 }} className="heading text-gray-500">
                 Hi!{" "}
-                <span className="wave" role="img" aria-labelledby="wave">
+                <span className="wave " role="img" aria-labelledby="wave">
                   👋🏻
                 </span>
               </h1>
 
-              <h1 className="heading-name">
+              <h1 className="heading-name text-gray-400">
                 I'm
-                <strong className="main-name"> Sebastián Gonzaléz</strong>
+                <strong className="main-name text-gray-500"> Sebastián Gonzaléz</strong>
               </h1>
 
               <div style={{ padding: 50, textAlign: "left" }}>
