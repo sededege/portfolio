@@ -3,12 +3,15 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 import tesmogif from "../../components/../Assets/Projects/tesmo/tesmotest.gif";
 import home from "../../components/../Assets/Projects/mora/home.png";
 import pikestore from "../../components/../Assets/Projects/pikestore/pikestore.png";
+import estrellas from "../../components/../Assets/Projects/5estrellas/5estrellas.png";
 import detail from "../../components/../Assets/Projects/mora/detalledesk.png";
 import cart from "../../components/../Assets/Projects/mora/cart.png";
 import detailcel from "../../components/../Assets/Projects/mora/detallecel.png";
 import { useParams } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import metaveropdf from "../../components/../Assets/metavero.pdf";
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md'
+
 const Projectspopup = () => {
   const [width, setWidth] = React.useState(1200);
 
@@ -49,14 +52,20 @@ const Projectspopup = () => {
                 our Discord to learn more and connect with our passionate and
                 knowledgeable community.
               </p>
-
+<div className=" flex gap-4">
               <a
                 href={link}
                 className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
               >
                 Visit web
               </a>
-
+              <a
+                href='https://earn.thesmophoria.io/'
+                className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
+              >
+                Visit plataform
+              </a>
+              </div>
               {/* <p>Sweep right to visit >></p> */}
             </div>
           </ParallaxLayer>
@@ -106,7 +115,7 @@ const Projectspopup = () => {
               >
                 Visit web
               </a>
-
+<div className="absolute bottom-32 flex items-center font-bold">Sweep up!  <MdKeyboardDoubleArrowUp/> </div>
               {/* <p>Sweep right to visit >></p> */}
             </div>
           </ParallaxLayer>
@@ -211,6 +220,56 @@ const Projectspopup = () => {
       </div>
     );
   };
+  const Estrellas = () => {
+    const link = "https://www.articulos5estrellas.com.uy";
+    return (
+      <div className="h-[89vh]">
+        <Parallax pages={5}>
+          <ParallaxLayer
+            className=" h-full"
+            id="1"
+            speed={0.4}
+            offset={0}
+            factor={1}
+          >
+            <div className="h-full items-center flex justify-center flex-col ">
+              <h1 className="text-[1rem] font-bold text-blue-500">5 Estrellas</h1>
+
+              <p className="w-full p-4 md:w-1/2">
+                Eccommerce developed in React JS + Tailwind CSS, Backend in
+                Firebase, REST API integration with Mercadopago both through
+                Node JS.
+              </p>
+
+              <a
+                href={link}
+                className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
+              >
+                Visit web
+              </a>
+
+              {/* <p>Sweep right to visit >></p> */}
+            </div>
+          </ParallaxLayer>
+          <ParallaxLayer
+            className=" h-full"
+            id="1"
+            speed={0.4}
+            offset={1.2}
+            factor={1}
+          >
+            <div className="h-full items-center justify-center flex-col md:flex hidden px-10">
+              <img
+                className="w-full rounded-lg shadow-md"
+                src={estrellas}
+                alt="gif"
+              />
+            </div>
+          </ParallaxLayer>
+        </Parallax>
+      </div>
+    );
+  };
   const Metavero = () => {
     const link = "https://www.pikestore.com.uy";
     return (
@@ -253,6 +312,7 @@ const Projectspopup = () => {
               >
                 View documentation
               </a>
+              <div className="absolute bottom-32 flex items-center font-bold">Sweep up!  <MdKeyboardDoubleArrowUp/> </div>
 
               {/* <p>Sweep right to visit >></p> */}
             </div>
@@ -281,6 +341,7 @@ const Projectspopup = () => {
       {projectId === "Mora" && <Mora />}
       {projectId === "Pikestore" && <Pikestore />}
       {projectId === "Metavero" && <Metavero />}
+      {projectId === "5Estrellas" && <Estrellas />}
     </div>
   );
 };

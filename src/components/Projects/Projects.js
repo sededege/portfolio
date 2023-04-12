@@ -53,6 +53,17 @@ function Projects() {
               video='https://www.youtube.com/watch?v=k7My7laKgGA&feature=youtu.be'
             />
           </Col>
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={myexp}
+              isBlog={false}
+              title="My Expenses"
+              description="Dashboard of expenses and income. Developed in React JS + Bootstrap + Material UI, Backend in MongoDB with Node JS + Postman. Status: Completed, Year: 2022"
+              ghLink="https://github.com/sededege/myexpenses"
+              demoLink="https://my-expenses-five.vercel.app/dash"
+              video='https://www.youtube.com/watch?v=k7My7laKgGA&feature=youtu.be'
+            />
+          </Col>
 
 
           {/* <Col md={4} className="project-card">

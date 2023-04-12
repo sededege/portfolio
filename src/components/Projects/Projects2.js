@@ -4,6 +4,7 @@ import logotesmo from "../../Assets/Projects/tesmo/thesmophoria.png";
 import logometavero from "../../Assets/Projects/metavero/metavero.png";
 import pikestore from "../../Assets/Projects/pikestore/pikestore.png";
 import logopikestore from "../../Assets/Projects/pikestore/logopikestore.png";
+import logo5estrellas from "../../Assets/Projects/5estrellas/logo5.png";
 
 import { motion } from "framer-motion";
 import { useNavigate } from "react-router-dom";
@@ -65,6 +66,22 @@ function Projects() {
   return (
     <div className="w-full h-[79vh] flex items-center mt-[30vh] md:mt-[10vh] px-4 md:px-20">
       <div className=" grid md:grid-cols-3 grid-cols-1 gap-4 ">
+      <ProjectCard
+        id={2}
+        name="5Estrellas"
+        detail="Ecommerce for 5 estrellas."
+        tech={[
+          "React Js",
+          "Strapi",
+          "Tailwind CSS",
+          "PostgreSQL",
+          "Heroku",
+          "Ecommerce",
+        ]}
+        year={2023}
+        img={logo5estrellas}
+        link="https://www.morafit.uy/"
+         />
         <ProjectCard
           id={1}
           name="Thesmophoria"
@@ -120,6 +137,7 @@ function Projects() {
           year={2022}
           img={logometavero}
           link="https://www.morafit.uy/" />
+      
       </div>
       {/*    <Fullpage/> */}
     </div>
