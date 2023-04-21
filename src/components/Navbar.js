@@ -105,7 +105,6 @@ function NavBar() {
   };
   return (
     <Navbar
-      expanded={expand}
       fixed="top"
       expand="md"
       className={navColour ? "sticky" : "navbar"}
@@ -125,7 +124,7 @@ function NavBar() {
           <span></span>
         </Navbar.Toggle>
         <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="ms-auto text-black" defaultActiveKey="#home">
+          <Nav className="ms-auto text-black " defaultActiveKey="#home">
             {menu.map((a) => (
               <Nav.Item>
                 <Nav.Link
@@ -139,16 +138,7 @@ function NavBar() {
               </Nav.Item>
             ))}
 
-            {/*  <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/soumyajit4419/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
-              </Button>
-            </Nav.Item> */}
+           
           </Nav>
         </Navbar.Collapse>
       </Container>

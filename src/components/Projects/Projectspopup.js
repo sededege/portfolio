@@ -11,7 +11,10 @@ import { useParams } from "react-router-dom";
 import { Document, Page, pdfjs } from "react-pdf";
 import metaveropdf from "../../components/../Assets/metavero.pdf";
 import { MdKeyboardDoubleArrowUp } from 'react-icons/md'
-
+import metaveromockup from '../../Assets/Projects/metavero/metaveromockup.png'
+import estrellasmockup from '../../Assets/Projects/5estrellas/5estrellasmockup.png'
+import moramockup from '../../Assets/Projects/mora/moramockup.png'
+import thesmomockup from '../../Assets/Projects/tesmo/thesmomockup.png'
 const Projectspopup = () => {
   const [width, setWidth] = React.useState(1200);
 
@@ -24,36 +27,17 @@ const Projectspopup = () => {
 
   const Tesmophoria = () => {
     const link = "https://www.thesmophoria.io";
+   
     return (
-      <div className="h-[89vh]">
-        <Parallax pages={2} horizontal>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={0}
-            factor={1}
-          >
-            <div className="h-full items-center flex justify-center flex-col ">
-              <h1 className="text-[1rem] font-bold text-blue-500">
-                Thesmophoria
-              </h1>
+      <div className="h-[80vh] mt-[10vh] overflow-auto">
+       
+            <div className="h-full items-center justify-center grid grid-cols-1 md:grid-cols-4 px-4 md:ml-20 md:px-20 ">
+              <div className="md:col-span-1 flex flex-col gap-2 ">
+              <h1 className="text-[1rem] font-bold text-blue-500">Tesmophoria</h1>
 
-              <p className="w-full p-4 md:w-1/2">
-                Thesmophoria was an artistic project that suffered a rug pull by
-                its founder, causing the community to lose everything. The
-                community refused to let the project die. In just 48 hours, they
-                raised 160 sol in donations to remint the project. Now the floor
-                price is higher than the all time high before the rug pull, with
-                rare NFTs selling for over 30+ $SOL. Now, the new Thesmophoria
-                team is working hard to build the project back up stronger than
-                ever, with a new website and roadmap for the future. Join the
-                Thesmophoria movement and be a part of something special. Visit
-                our Discord to learn more and connect with our passionate and
-                knowledgeable community.
-              </p>
-<div className=" flex gap-4">
-              <a
+              <p className="w-full overflow-auto">
+              Thesmophoria, a blockchain platform built on Solana, faced a rug pull by its founder. However, the community showed their resilience by rallying together to remint the project and prevent it from collapsing. As a React JS developer, I built their project website and platform where users can stake their NFTs to earn points for rewards. I utilized Node and Firebase, and leveraged Quicknode RPC to facilitate interactions with the Solana blockchain.            </p>
+                <a
                 href={link}
                 className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
               >
@@ -65,109 +49,46 @@ const Projectspopup = () => {
               >
                 Visit plataform
               </a>
-              </div>
-              {/* <p>Sweep right to visit >></p> */}
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={0.8}
-            factor={1}
-          >
-            <div className="h-full items-center justify-center flex-col md:flex hidden  px-10">
-              <img
-                className="w-3/4 rounded-lg shadow-md"
-                src={tesmogif}
-                alt="gif"
-              />
-            </div>
-          </ParallaxLayer>
-        </Parallax>
+             
+             </div>
+             <div className="md:col-span-3 flex flex-col gap-2 ">
+              <img src={thesmomockup} className="md:h-[70vh] object-contain md:object-cover" alt='metavero' />
+</div>
+             </div>
+
       </div>
+      
     );
   };
   const Mora = () => {
     const link = "https://www.morafit.uy";
-    return (
-      <div className="h-[89vh]">
-        <Parallax pages={5}>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={0}
-            factor={1}
-          >
-            <div className="h-full items-center flex justify-center flex-col ">
-              <h1 className="text-[1rem] font-bold text-blue-500">Mora</h1>
-
-              <p className="w-full p-4 md:w-1/2">
+     return (
+        <div className="h-[80vh] mt-[10vh] overflow-auto">
+         
+              <div className="h-full items-center justify-center grid grid-cols-1 md:grid-cols-4 px-4 md:ml-20 md:px-20 ">
+                <div className="md:col-span-1 flex flex-col gap-2 ">
+                <h1 className="text-[1rem] font-bold text-blue-500">Mora fit</h1>
+  
+                <p className="w-full overflow-auto">
                 Eccommerce developed in React JS + Tailwind CSS, Backend in
-                Firebase, REST API integration with Mercadopago both through
-                Node JS.
-              </p>
-
-              <a
-                href={link}
-                className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
-              >
-                Visit web
-              </a>
-<div className="absolute bottom-32 flex items-center font-bold">Sweep up!  <MdKeyboardDoubleArrowUp/> </div>
-              {/* <p>Sweep right to visit >></p> */}
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={1}
-            factor={1}
-          >
-            <div className="h-full items-center justify-center flex-col md:flex hidden  px-10">
-              <img
-                className="w-full rounded-lg shadow-md"
-                src={home}
-                alt="gif"
-              />
-            </div>
-          </ParallaxLayer>
-
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={2.2}
-            factor={1}
-          >
-            <div className="h-full items-center justify-center flex-col md:flex hidden  px-10">
-              <img
-                className="w-full rounded-lg shadow-md"
-                src={detail}
-                alt="gif"
-              />
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={3}
-            factor={1}
-          >
-            <div className="h-full items-center justify-center flex-col md:flex hidden  px-10 ">
-              <img
-                className="w-full rounded-lg shadow-md"
-                src={cart}
-                alt="gif"
-              />
-            </div>
-          </ParallaxLayer>
-        </Parallax>
-      </div>
-    );
+                  Firebase, REST API integration with Mercadopago both through
+                  Node JS.              </p>
+                <a
+                  href={link}
+                  className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
+                >
+                  Visit web
+                </a>
+               
+               </div>
+               <div className="md:col-span-3 flex flex-col gap-2 ">
+                <img src={moramockup} className="md:h-[70vh] object-contain md:object-cover" alt='metavero' />
+  </div>
+               </div>
+  
+        </div>
+        
+      );
   };
 
   const Pikestore = () => {
@@ -223,114 +144,64 @@ const Projectspopup = () => {
   const Estrellas = () => {
     const link = "https://www.articulos5estrellas.com.uy";
     return (
-      <div className="h-[89vh]">
-        <Parallax pages={5}>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={0}
-            factor={1}
-          >
-            <div className="h-full items-center flex justify-center flex-col ">
+      <div className="h-[80vh] mt-[10vh] overflow-auto">
+       
+            <div className="h-full items-center justify-center grid grid-cols-1 md:grid-cols-4 px-4 md:ml-20 md:px-20 ">
+              <div className="md:col-span-1 flex flex-col gap-2 ">
               <h1 className="text-[1rem] font-bold text-blue-500">5 Estrellas</h1>
 
-              <p className="w-full p-4 md:w-1/2">
-                Eccommerce developed in React JS + Tailwind CSS, Backend in
+              <p className="w-full overflow-auto">
+              Eccommerce developed in React JS + Tailwind CSS, Backend in
                 Firebase, REST API integration with Mercadopago both through
-                Node JS.
-              </p>
-
+                Node JS.              </p>
               <a
                 href={link}
                 className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
               >
                 Visit web
               </a>
+             
+             </div>
+             <div className="md:col-span-3 flex flex-col gap-2 ">
+              <img src={estrellasmockup} className="md:h-[70vh] object-contain md:object-cover" alt='metavero' />
+</div>
+             </div>
 
-              {/* <p>Sweep right to visit >></p> */}
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={1.2}
-            factor={1}
-          >
-            <div className="h-full items-center justify-center flex-col md:flex hidden px-10">
-              <img
-                className="w-full rounded-lg shadow-md"
-                src={estrellas}
-                alt="gif"
-              />
-            </div>
-          </ParallaxLayer>
-        </Parallax>
       </div>
+      
     );
   };
   const Metavero = () => {
     const link = "https://www.pikestore.com.uy";
     return (
-      <div className="h-[89vh]">
-        <Parallax pages={2}>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={0}
-            factor={1}
-          >
-            <div className="h-full items-center flex justify-center flex-col ">
+      <div className="h-[80vh] mt-[10vh] overflow-auto">
+       
+            <div className="h-full items-center justify-center grid md:grid-cols-4 md:ml-20 md:px-20 px-4 ">
+              <div className="md:col-span-1 flex flex-col gap-2 ">
               <h1 className="text-[1rem] font-bold text-blue-500">Metavero</h1>
 
-              <p className="w-full p-4 md:w-1/2">
-                Metavero is a modern and intuitive application designed to
-                enhance the user experience of shopping for furniture online.
-                The app allows users to visualize furniture products in their
-                own space, using augmented reality technology. The user
-                interface of the app is built using React JS and Bootstrap CSS,
-                ensuring a seamless and responsive experience across devices.
-                The backend is powered by WordPress, which allows for easy
-                content management and customization. The app features a wide
-                range of furniture products from different categories such as
-                living room, bedroom, dining room, and office. Users can browse
-                through the available products, filter them by various criteria,
-                and select the ones they like. Once a user selects a product,
-                they can use the augmented reality feature to see how it would
-                look in their own space. The app uses the camera on the user's
-                device to capture the space and superimpose the furniture
-                product in real-time. Users can move the product around, rotate
-                it, and adjust its size and position until they are satisfied
-                with the result.
+              <p className="w-full overflow-auto">
+              Metavero is an augmented reality app for online furniture shopping. Built with React JS and Bootstrap CSS, it provides a seamless and responsive user interface. The app offers a variety of furniture products, which can be filtered and viewed in AR using the camera on the user's device. The backend is powered by WordPress for easy content management.
               </p>
-
               <a
                 href={metaveropdf}
                 className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
               >
                 View documentation
               </a>
-              <div className="absolute bottom-32 flex items-center font-bold">Sweep up!  <MdKeyboardDoubleArrowUp/> </div>
+              <a
+                href='https://xd.adobe.com/view/a643ca33-2dbf-4c93-b580-0a7ec695de75-f310/screen/d33988a1-73d3-4781-b385-836dade2c1cc?fullscreen'
+                className=" mt-2 p-2 cursor-pointer rounded-lg no-underline border-blue-500 bg-blue-500   text-white "
+              >
+                View adobe XD
+              </a>
+             
+             </div>
+             <div className="md:col-span-3 flex flex-col gap-2 ">
+              <img src={metaveromockup} className="md:h-[70vh] h-full object-contain md:object-cover" alt='metavero' />
+</div>
+             </div>
 
-              {/* <p>Sweep right to visit >></p> */}
-            </div>
-          </ParallaxLayer>
-          <ParallaxLayer
-            className=" h-full"
-            id="1"
-            speed={0.4}
-            offset={0.9}
-            factor={1}
-          >
-            <div className="h-full items-center flex justify-center flex-col ">
-              <Document file="https://sebag.tech/static/media/metavero.ed426c89fa83b5df3e53.pdf">
-                <Page pageNumber={12} scale={width > 786 ? 0.6 : 0.6} />
-              </Document>
-            </div>
-          </ParallaxLayer>
-        </Parallax>
       </div>
     );
   };

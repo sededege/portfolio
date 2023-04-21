@@ -91,7 +91,7 @@ function Projects() {
           img={logotesmo}
           link="https://www.thesmophoria.io/"
         />
-        <ProjectCard
+       {/*  <ProjectCard
         id={2}
         name="Pikestore"
         detail="Ecommerce & Dashboard for Pikestore."
@@ -106,7 +106,7 @@ function Projects() {
         year={2023}
         img={logopikestore}
         link="https://www.morafit.uy/"
-         />
+         /> */}
         <ProjectCard
           id={3}
           name="Mora"
