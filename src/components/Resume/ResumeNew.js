@@ -9,7 +9,7 @@ import "react-pdf/dist/esm/Page/AnnotationLayer.css";
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 const resumeLink =
-  "https://sebag.tech/static/media/resume.fe8ff0e95c929f925a9f.pdf";
+  "https://sebag.tech/static/media/resume.3205f871bc0c53de6664.pdf";
 
 function ResumeNew() {
   const [width, setWidth] = useState(1200);
