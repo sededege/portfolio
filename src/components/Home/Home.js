@@ -4,6 +4,8 @@ import homeLogo from "../../Assets/home-main.svg";
 import Particle from "../Particle";
 import Home2 from "./Home2";
 import Type from "./Type";
+import ReactPlayer from 'react-player';
+
 
 function Home() {
   return (
@@ -11,6 +13,7 @@ function Home() {
       <Container fluid className="home-section " id="home">
 {/*         <Particle />
  */}        <Container className="home-content">
+  
           <Row>
             <Col md={7} className="home-header">
               <h1 style={{ paddingBottom: 15 }} className="heading text-gray-500">
@@ -39,7 +42,19 @@ function Home() {
               />
             </Col>
           </Row>
+         
         </Container>
+        <Row>
+    <Col className="h-[80vh]">
+    <ReactPlayer
+  url="https://vimeo.com/831293923?share=copy"
+  width="100%"
+  height="100%"
+  controls={true}
+
+/>
+    </Col>
+  </Row>
       </Container>
       <Home2 />
     </section>
