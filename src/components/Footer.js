@@ -41,7 +41,7 @@ function Footer() {
         <li className=" shadow-md p-2 rounded-full">
           <a
             className="text-blue-500  "
-            href="https://www.instagram.com/sebagonzalez_97/"
+            href="https://www.instagram.com/sebagtech"
             target="_blank"
             rel="noopener noreferrer"
           >

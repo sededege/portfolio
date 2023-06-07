@@ -78,7 +78,7 @@ function Home2() {
               </li>
               <li className="bg-white shadow-md w-10 h-10 rounded-full items-center flex justify-center">
                 <a
-                  href="https://www.instagram.com/sebagonzalez_97/"
+                  href="https://www.instagram.com/sebagtech/"
                   target="_blank"
                   rel="noreferrer"
                  
